@@ -5,15 +5,35 @@
 body {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .vertical-banner {
     /* flex-grow: 1; */
     background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+    position: relative;
     background-size: cover;
     width: 30%;
     height: 900px;
 
+}
+
+.odin-banner {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    opacity: 50%;
+}
+
+.footnote {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.85rem;
 }
 
 .user-interface {
