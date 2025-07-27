@@ -1,20 +1,44 @@
+@import "modern-normalize";
+
 :root {
-    margin: 0;
+  line-height: 1.5;
 }
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
+}
+
+/* ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+} */
+
+/* h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+} */
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+/* end of reset */
 
 body {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    height: 900px;
+    margin: 0;
+    padding: 0;
 }
 
 .vertical-banner {
-    /* flex-grow: 1; */
     background-image: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
     position: relative;
     background-size: cover;
     width: 30%;
-    height: 900px;
+    height: inherit;
 
 }
 
@@ -34,6 +58,7 @@ body {
     right: 0;
     text-align: center;
     font-size: 0.85rem;
+    color: white;
 }
 
 .user-interface {
@@ -41,26 +66,60 @@ body {
     flex-direction: column;
     width: 70%;
     justify-content: center;
-    background-color:rgb(253, 252, 249);
-    /* flex-grow: 2; */
-}
-
-.introduction {
-
-}
-
-.user-data{
-    background-color: white;
-}
-
-.data-submission{
-
+    background-color: #fff9f9;
 }
 
 .introduction, .user-data, .data-submission{
     padding: 50px;
 }
 
-.footnote {
+.introduction {
+    max-width: 900px;
+}
+
+.user-data{
+    background-color: white;
+    padding-top: 25px;
+}
+
+.data-submission{
+    padding-top: 35px;
+}
+
+form {
+    display: flex;
+    max-width: 800px;
+    gap: 25px;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.8rem;
+}
+
+input {
+    width: 300px;
+    height: 25px;
+}
+
+button {
+    width: 170px;
+    height: 40px;
+    margin-bottom: 15px;
     color: white;
+    background-color: #556954;
+    border-radius: 10px;
+    border-style: none;
 }
