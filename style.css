@@ -49,6 +49,19 @@ body {
     height: 200px;
     background-color: black;
     opacity: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin-banner > img {
+    height: 60%;
+}
+ 
+.odin-banner > p {
+    color: white;
+    font-size: 90px;
 }
 
 .footnote {
@@ -112,6 +125,10 @@ label {
 input {
     width: 300px;
     height: 25px;
+    border: 1.5px;
+    border-color: lightgray;
+    border-style:solid;
+    border-radius: 5px;
 }
 
 button {
