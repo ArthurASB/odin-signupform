@@ -25,7 +25,8 @@
         </div>
         <div class="user-data">
             <h1>Let's do This!</h1>
-            <form>
+        <form>
+            <div class="user-form">
                 <div class="form-row">
                     <div class="form-data">
                         <label for="first-name">FIRST NAME</label>
@@ -49,19 +50,21 @@
                 <div class="form-row">
                     <div class="form-data">
                         <label for="pwd">PASSWORD</label>
-                        <input id="pwd" type="password">
+                        <input id="pwd" type="password" maxlength="8">
                     </div>
                     <div class="form-data">
                         <label for="pwdconfirm">CONFIRM PASSWORD</label>
-                        <input id="pwdconfirm" type="password">                  
+                        <input id="pwdconfirm" type="password" maxlength="8">                  
                     </div>
                 </div>
-            </form>
+            </div>
+        
         </div>
         <div class="data-submission">
-            <button>Create Account</button>
+            <button type="submit">Create Account</button>
             <p>Already have an account? <a href="https://www.google.com">Log In</a></p>
         </div>
+        </form>
     </div>
 </body>
 </html>
