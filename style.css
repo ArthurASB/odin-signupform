@@ -35,6 +35,8 @@ img {
 }
 
 body {
+    --secundary-color: #556954; 
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: row;
     height: 900px;
@@ -115,6 +117,13 @@ body {
     padding-top: 35px;
 }
 
+.data-submission > p > a{
+    color: var(--secundary-color);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
 form {
     display: flex;
     max-width: 800px;
@@ -143,8 +152,9 @@ input {
     height: 25px;
     border: 1.5px;
     border-color: lightgray;
-    border-style:solid;
+    border-style: solid;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 button {
@@ -152,7 +162,28 @@ button {
     height: 40px;
     margin-bottom: 15px;
     color: white;
-    background-color: #556954;
+    background-color: var(--secundary-color);
     border-radius: 10px;
     border-style: none;
+    font-weight: bold;
+}
+
+input:focus {
+    box-shadow: 0px 2px 4px lightgray;
+    border: 1.5px solid var(--secundary-color);
+    outline: none;
+}
+
+input:invalid {
+    border: 1.5px solid red;
+    outline: none;
+}
+
+button:active {
+    box-shadow: 0px 2px 4px rgb(83, 110, 9);
+}
+
+button:hover {
+    background-color:#3f4e3e;
+
 }
